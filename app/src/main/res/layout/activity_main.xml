@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="32dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:text="Hello World!"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="HMS Message Service" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_subscribe_to_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Join Topic"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_unsubscribe_to_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Leave Topic"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_signout_with_huawei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@color/hwid_auth_button_color_red"
+            android:drawableLeft="@drawable/hwid_auth_button_round_white"
+            android:drawablePadding="16dp"
+            android:onClick="signOutWithHuawei"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/logout_with_huawei"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+    </LinearLayout>
+</RelativeLayout>
